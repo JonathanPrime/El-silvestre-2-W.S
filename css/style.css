@@ -62,17 +62,18 @@ section {
 
 .heading .title-menu {
   text-align: center;
-  font-family: 'Tenstars';
-  font-size: 11rem;
+  font-family: 'Bebas-Neue-Pro-Bold';
+  font-size: 5.8rem;
+  text-transform: uppercase;
   margin-top: -4rem;
   color: var(--white);
 }
 
 .heading .sub-menu {
   text-align: center;
-  font-family: 'Bebas-Neue-Pro-Bold';
-  text-transform: uppercase;
-  font-size: 5.8rem;
+  font-family: 'Tenstars';
+
+  font-size: 11rem;
   color: var(--palet-2);
 }
 
@@ -161,7 +162,7 @@ img {
 }
 
 .header .nav a {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
   font-family: 'Bebas-Neue-Pro-Bold';
   margin-left: 2rem;
@@ -228,6 +229,7 @@ img {
 
 .home-text {
   width: 65%;
+  padding-top: 6rem;
   text-align: center;
 }
 
@@ -249,6 +251,7 @@ img {
 }
 
 .home-img {
+  padding-top: 6rem;
   animation: float 3s linear infinite;
 }
 
@@ -280,7 +283,7 @@ img {
 
 .service {
   background: var(--palet-2) url(../images/vectores/patron-2.svg) repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   padding: 2rem 9% !important;
 }
@@ -312,6 +315,7 @@ img {
 .service-box .box .title-services {
   padding: 1rem 0;
   font-size: 4rem;
+  text-transform: uppercase;
   color: var(--black);
   font-family: 'Bebas-Neue-Pro-Bold';
 }
@@ -319,7 +323,7 @@ img {
 .service-box .box .sub-services {
   padding: 1rem 0;
   margin-top: -4rem;
-  font-size: 5rem;
+  font-size: 7rem;
   color: var(--palet-1);
   font-family: 'Tenstars';
 }
@@ -334,8 +338,8 @@ img {
 /*========== MENU ==========*/
 
 .menu {
-  background: #181415f2 url(../images/vectores/patron-1.svg) repeat;
-  background-size: contain;
+  background: url(../images/vectores/patron-1.svg), url(../images/back-menu-2.jpg) repeat;
+  background-size: 50%, contain;
   background-position: center;
   padding: 2rem 9% !important;
 }
@@ -405,7 +409,7 @@ img {
 .menu__preci {
   font-size: 2rem;
   margin: 1rem !important;
-  background-color: var(--black);
+  background-color: var(--palet-1);
   color: var(--white) !important;
   border-radius: 2rem;
   text-align: center;
@@ -603,7 +607,7 @@ img {
 
 .about .content .title {
   font-size: 6rem;
-  margin-top: -3rem;
+  margin-top: -5rem;
   font-family: 'Bebas-Neue-Pro-Bold';
   text-transform: uppercase;
   color: var(--black);
@@ -640,7 +644,7 @@ img {
 
 .reviews {
   background: var(--palet-2) url(../images/vectores/patron-2.svg) repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   padding: 2rem 9% !important;
 }
@@ -648,9 +652,13 @@ img {
 .heading .reviews-title {
   font-family: 'Bebas-Neue-Pro-Bold';
   font-size: 6rem;
-  margin-top: -4.5rem;
-  padding-left: 6rem;
+  margin-top: -5rem;
   color: var(--black);
+}
+
+.reviews .box-container {
+  background-color: var(--black);
+  border-radius: 14rem;
 }
 
 .heading .script-review {
@@ -670,7 +678,7 @@ img {
 .heading .script-contact {
   font-family: 'Tenstars';
   font-size: 10rem;
-  margin-top: -4rem;
+  margin-top: -3.5rem;
   color: var(--palet-1);
 }
 
@@ -698,7 +706,7 @@ img {
   font-size: 3rem;
   text-transform: uppercase;
   font-family: 'Bebas-Neue-Pro-Bold';
-  color: var(--black);
+  color: var(--white);
 }
 
 .reviews .box-container .box p {
@@ -1373,6 +1381,10 @@ input.whats-input[type=text]:focus {
     background-position-y: center;
   }
 
+  .home-img, .home-text {
+    padding-top: 0 !important;
+  }
+
   .home {
     flex-direction: column;
   }
@@ -1488,6 +1500,7 @@ input.whats-input[type=text]:focus {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 5rem;
     padding-bottom: 4rem;
   }
 
@@ -1501,7 +1514,13 @@ input.whats-input[type=text]:focus {
   }
 
   .home {
-    background-position-x: -60rem;
+    background: none;
+  }
+
+  .home-1 {
+    background: url(../images/banner-ver.png) no-repeat;
+    background-size: cover;
+    background-position-x: right;
   }
 
   .about {
@@ -1545,7 +1564,7 @@ input.whats-input[type=text]:focus {
   }
 
   .service-box .box .sub-services {
-    font-size: 5.2rem;
+    font-size: 7.2rem;
   }
 
   .heading .blog-title {
@@ -1565,12 +1584,12 @@ input.whats-input[type=text]:focus {
   }
 
   .heading .title-menu {
-    font-size: 10rem;
+    font-size: 6rem;
     margin-top: -3.5rem;
   }
 
   .heading .sub-menu {
-    font-size: 5rem;
+    font-size: 8rem;
   }
 }
 
